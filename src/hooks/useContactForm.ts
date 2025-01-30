@@ -54,15 +54,30 @@ export function useContactForm() {
     if (!validateForm()) return;
     
     setFormStatus('loading');
-    
+
+    const messageContent = {
+      content: `New message from ${formData.name} (${formData.email}):\n${formData.message}`
+    };
+
     try {
-      // TODO: Replace with actual API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setFormStatus('success');
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setFormStatus('idle'), 3000);
+      const response = await fetch('http://localhost:5000/send-to-discord', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(messageContent)
+      });
+
+      if (response.ok) {
+        setFormStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setFormStatus('error');
+      }
     } catch (error) {
+      console.error('Error sending message to Discord:', error);
       setFormStatus('error');
+    } finally {
       setTimeout(() => setFormStatus('idle'), 3000);
     }
   };
@@ -85,4 +100,4 @@ export function useContactForm() {
     handleSubmit,
     handleInputChange
   };
-} 
+}

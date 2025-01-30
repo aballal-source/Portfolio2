@@ -12,9 +12,11 @@ function ProfileImage() {
   return (
     <div className="relative h-[300px] overflow-hidden flex flex-col justify-start">
       <Image
+      priority={true}
         src={profileImage}
         alt="Ahmed Ballal"
         fill
+        sizes="(max-width: 768px) 100vw, 50vw"
         className="object-cover object-center transform group-hover:scale-105 transition-transform duration-300 opacity-90 filter brightness-75 contrast-125"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-darkLight via-darkLight/95 to-transparent z-10" />
