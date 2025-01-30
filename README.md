@@ -16,7 +16,7 @@
   - Express.js
 
 - DevOps:
-  - Vercel: A platform for frontend hosting and deployment.
+  - Vercel: A platform for frontend hosting, deployment, and Analytics.
 
 - Additional Tools:
   - Framer Motion: For animations and transitions.
