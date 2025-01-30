@@ -1,28 +1,8 @@
-# Project Name
-![Project Status](https://img.shields.io/badge/status-active-success.svg)
-![GitHub Issues](https://img.shields.io/github/issues/yourusername/project-name)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/yourusername/project-name)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
-## 📝 Table of Contents
-- [About](#about)
-- [Demo](#demo)
-- [Technical Stack](#technical-stack)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built-using)
-- [Performance](#performance)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgments)
-
-## 🧐 About
-I wanted to create a portfolio website that showcases my skills and projects.
+# PortfolioV2
+🧐 This project is a portfolio website that includes a contact form which sends messages to a Discord channel using a webhook. The backend is built with Node.js and Express, and the frontend is built with React.
 
 ## 🎥 Demo
-- [Live Demo](https://your-demo-link.com)
-
+- [Live Demo](https://portfolio2-plum-three.vercel.app/)
 
 ## 💻 Technical Stack
 - Frontend:
@@ -36,7 +16,6 @@ I wanted to create a portfolio website that showcases my skills and projects.
   - Express.js
 
 - DevOps:
-  - GitHub Actions: For CI/CD workflows.
   - Vercel: A platform for frontend hosting and deployment.
 
 - Additional Tools:
@@ -47,42 +26,61 @@ I wanted to create a portfolio website that showcases my skills and projects.
   - React Reveal: For reveal animations.
   - React Icons: For icons.
 
-## 🎯 Features
-- Responsive design
-  - Utilizes TailwindCSS to ensure the portfolio is responsive on all devices.
-- Dynamic Animations:
-  - Utilizes Framer Motion to create dynamic animations for the portfolio.
-- Profile Card:
-  - Displays a profile card with a picture, name, title, and social links.
-  - Interactive hover effect
-- Themed Styling:
-  - Consistent use of a custom theme for colors and styles, ensuring a cohesive look and feel.
-- Server-Side Rendering:
-  - Utilizes Next.js's server-side rendering to improve performance and SEO.
+### Prerequisites
 
-## 🏁 Getting Started
+- Node.js and npm installed on your machine.
+- A Discord webhook URL for receiving messages.
 
+### Installation
+
+1. **Clone the Repository**:
 ```bash
-Clone the repository
-
-Install dependencies
-npm install
-
-Set up environment variables
-Create a .env file in the root directory
-
-Start the development server
-npm run dev //for windows
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   git clone https://github.com/yourusername/PortfolioV2.git
+   cd portfolio2
 ```
 
-## 🚀 Deployment
-Deployment instructions and considerations.
+2. **Install Dependencies**:
+   Navigate to both the frontend and backend directories and install the necessary packages.
+
+```bash
+   # For backend
+   cd backend
+   npm install
+```
+
+### 🏁 Running the Application
+1. **Start the Backend Server**:
+   - Navigate to the `backend` directory and start the server.
+```bash
+cd backend
+   node server.mjs
+```
+2. **Start the Frontend**:
+   - Navigate to the `frontend` (root) directory and start the development server. 
+```bash
+  npm run build
+  npm run dev
+```
+3. **Set Up Environment Variables**:
+   - Create a `.env` file in the `backend` directory.
+   - Add your Discord webhook URL to the `.env` file:
+
+```bash
+DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN
+```
+
+4. **Ensure `.env` is in `.gitignore`**:
+   - Make sure your `.env` file is listed in your `.gitignore` to prevent it from being committed to your repository.
+
+```bash
+# .gitignore
+.env
+```
+
+### 🚀 Deployment
+
+- **Environment Variables**: When deploying, set your environment variables in your hosting provider's dashboard (e.g., Vercel, Heroku) instead of using a `.env` file.
+- **CORS Configuration**: Ensure CORS is configured to allow requests from your domain.
 
 ## 📊 Performance
 - Fast Load Times:
@@ -91,14 +89,19 @@ Deployment instructions and considerations.
   - Utilizes Framer Motion to create smooth animations, improving user experience.
 - Lighthouse Score: 
   - Aim for high scores in performance, accessibility, best practices, and SEO.
-- Optimizzed Code:
+- Optimized Code:
   - Use of TypeScript for catching errors early and maintaining clean, efficient code.
 
 ## ✍️ Authors
 - [@aballal-source](https://github.com/aballal-source)
 
-## 🎉 Acknowledgments
-- generated with assistance from Cursor
+### Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
 ---
 
