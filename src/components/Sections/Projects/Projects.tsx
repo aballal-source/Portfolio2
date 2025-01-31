@@ -1,3 +1,4 @@
+//Projects.tsx
 import { motion } from 'framer-motion';
 import { ProjectCard } from '@/components/Sections/Projects/ProjectCard';
 import { projects } from '@/constants/data';

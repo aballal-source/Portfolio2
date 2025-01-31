@@ -1,3 +1,4 @@
+//ProjectCard.tsx
 import { motion } from 'framer-motion';
 import type { Project } from '@/types';
 

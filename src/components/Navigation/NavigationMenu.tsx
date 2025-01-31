@@ -1,3 +1,4 @@
+//NavigationMenu.tsx
 import { motion } from 'framer-motion';
 import type { Section } from '@/types';
 

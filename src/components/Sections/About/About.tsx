@@ -1,3 +1,4 @@
+//About.tsx
 import { motion } from 'framer-motion';
 import { TechStackCarousel } from '@/components/Sections/About/TechStackCarousel';
 import ReactTypingEffect from 'react-typing-effect';
@@ -16,7 +17,7 @@ export function About() {
           {/* Introduction */}
           <div className="space-y-4 py-6 text-left lg:ml-[150px]">
             <h2 className="text-4xl md:text-5xl font-bold">
-              Hi, I'm{' '}
+              Hi, I&apos;m{' '}
               <span className="bg-gradient-to-r from-[#00D2BE] to-[#27F4D2] bg-clip-text text-transparent">
                 Ahmed Ballal
               </span>
@@ -30,7 +31,7 @@ export function About() {
     transition={{ delay: 0.2 }}
   >
     <div>
-      I'm a(n){' '}
+      I&apos;m a(n){' '}
       <span className="text-white font-semibold relative">
         <ReactTypingEffect
           text={[

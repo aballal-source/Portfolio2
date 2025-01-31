@@ -1,3 +1,4 @@
+//SocialLinks.tsx
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 import { RiTwitterXLine } from 'react-icons/ri';

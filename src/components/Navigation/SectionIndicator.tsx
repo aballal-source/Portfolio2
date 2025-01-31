@@ -1,3 +1,4 @@
+//SectionIndicator.tsx
 import { motion } from 'framer-motion';
 import type { Section } from '@/types';
 import { theme } from '@/constants/theme';

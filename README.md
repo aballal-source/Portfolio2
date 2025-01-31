@@ -104,5 +104,3 @@ DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOO
 5. Open a pull request.
 
 ---
-
-*Documentation generated with assistance from GPT-4.*
